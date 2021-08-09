@@ -1,0 +1,123 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr 1.1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 100vh;
+}
+
+.chat {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 2fr;
+    background-color: #DDE1E2;
+    min-width: 100%;
+    min-height: 100%;
+    align-items: stretch;
+    box-shadow: 0px 0px 13px 7px rgba(34, 60, 80, 0.21);
+}
+
+#background_img {
+    min-width: 100%;
+    max-height: 100px;
+}
+
+#dialog {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#dialog::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.msg {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+.msg .avatar1 {
+border-radius: 50%;
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+    min-height: 75px;
+    max-width: 75px;
+}
+
+.msg #txt {
+    background-color: white;
+    border: solid;
+    border-color: white;
+    border-radius: 10px;
+    word-wrap: break-word;
+    max-width: 98%;
+    font-size: x-large;
+}
+
+.msg2 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: #D3D7D8;
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+.msg2 #txt {
+    background-color: white;
+    border: solid;
+    border-color: white;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    min-width: 98%;
+    font-size: x-large;
+}
+
+.msg2 .avatar2 {
+    border-radius: 50%;
+    min-height: 75px;
+    max-width: 75px;
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+#form {
+    padding: 1px;
+    border-top: solid;
+    border-color: #D3D7D8;
+}
+
+#general_form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#entry_field {
+    min-width: 80%;
+    min-height: 80%;
+    border-radius: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    font-size: x-large;
+}
+
+#div_button {
+    padding: 1px;
+    border-top: solid;
+    border-color: #D3D7D8;
+}
+
+#button {
+    min-width: 81%;
+    min-height: 80%;
+    border-radius: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2589CC;
+}
